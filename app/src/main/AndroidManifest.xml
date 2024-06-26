@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodiesRecipeBook"
+        tools:targetApi="31">
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TruffledEgg"
+            android:exported="false" />
+        <activity
+            android:name=".SunDried"
+            android:exported="false" />
+        <activity
+            android:name=".EggBendict"
+            android:exported="false" />
+        <activity
+            android:name=".CroissantSandwich"
+            android:exported="false" />
+        <activity
+            android:name=".Bazlama"
+            android:exported="false" />
+        <activity
+            android:name=".MasalaOmelette"
+            android:exported="false" />
+        <activity
+            android:name=".PotatoBoats"
+            android:exported="false" />
+        <activity
+            android:name=".AvocadoEgg"
+            android:exported="false" />
+        <activity
+            android:name=".HomeFoodie"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Main"
+            android:exported="false" />
+        <activity
+            android:name=".KitchenSalty"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneCode"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyPhone"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeFoode"
+            android:exported="false" />
+        <activity
+            android:name=".MasterChef"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GlobalKitchen"
+            android:exported="false" />
+        <activity
+            android:name=".share_recipe"
+            android:exported="false" />
+        <activity
+            android:name=".salty_food"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cookbook"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/dancing"
+        android:textColor="@color/orgl"
+        />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/custom_transcore"
+        android:hint="Search For Food"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_search"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_search"
+        android:text="@string/most_liked"
+        android:fontFamily="@font/aqrada"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/hori">
+
+        <LinearLayout
+            android:id="@+id/lay_homi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Recipe 1 -->
+            <LinearLayout
+                android:id="@+id/lay_homie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <ImageView
+                    android:id="@+id/img_pote1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/whole_egg_potato_boats"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="potato"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <ImageView
+                    android:id="@+id/img_toat"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/loaded_avocado_toast_scrambled_egg"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toast"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <ImageView
+                    android:id="@+id/img_set1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/scrambled_egg_croissant_breakfast_sandwich"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/croissant"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <ImageView
+                    android:id="@+id/img_set2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/egg_benedict"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bana"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hori"
+        android:text="@string/popular"
+        android:fontFamily="@font/aqrada"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ScrollView
+        android:layout_below="@id/tex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/recipe_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecipe"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/masala_omelette" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/masal"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecipe1"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/scrambled_egg_croissant_breakfast_sandwich" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/criss"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecipe2"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/whole_egg_potato_boats" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boat"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recipe_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecipe3"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/egg_benedict" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bana"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/recipe_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecipe4"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/egg_cheese_stuffed_bazlama_bread" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bazl"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/recipe_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imageViewRecipe5"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loaded_avocado_toast_scrambled_egg" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitle5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avocad"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="0.5"
+                        android:isIndicator="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

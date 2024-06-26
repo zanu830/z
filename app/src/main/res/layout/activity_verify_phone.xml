@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhone">
+
+    <ImageView
+        android:id="@+id/img_base_4"
+        android:layout_width="500dp"
+        android:layout_height="450dp"
+        android:src="@drawable/head_img"
+        android:layout_marginBottom="490dp"
+        />
+    <ImageView
+        android:id="@+id/img_base_down"
+        android:layout_width="750dp"
+        android:layout_height="750dp"
+        android:src="@drawable/head_base2"
+        android:layout_marginTop="140dp"
+        />
+    <ImageView
+        android:id="@+id/img_logo_no"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:src="@drawable/download_logo"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="15dp"
+        />
+    <TextView
+        android:id="@+id/tv_phn_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phne_nmb"
+        android:fontFamily="@font/dancing"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="140dp"
+        android:layout_marginTop="290dp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:id="@+id/lay_nmbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_phn_no"
+        android:layout_marginTop="40dp"
+        android:weightSum="2"
+        >
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/custom_transcore"
+            android:hint=" 1 2 3 - 4 5 6 - 7 8 9 2 "
+            android:paddingStart="10dp"
+            android:textColor="@color/orgl"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sign_up_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn_blck"
+        android:text="@string/btn_up"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="530dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>
